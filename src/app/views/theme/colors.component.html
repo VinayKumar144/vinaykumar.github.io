@@ -1,0 +1,30 @@
+<div class="fade-in">
+  <c-card class="mb-4">
+    <c-card-header>
+      Customers
+    </c-card-header>
+    <c-card-body>
+      <table [hover]="true" [responsive]="true" [striped]="true" align="middle" cTable class="mb-0 border">
+        <thead cTableColor="light">
+          <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Staus</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr *ngFor="let user of usersData">
+         <td>{{user.first_name}}</td>
+         <td>{{user.last_name}}</td>
+         <td>{{user.email}}</td>
+         <td>{{user.address}}</td>
+         <td>{{user.active==1?'Active':'In Active'}}</td>
+        </tr>
+      </tbody>
+      </table>
+    </c-card-body>
+  </c-card>
+</div>

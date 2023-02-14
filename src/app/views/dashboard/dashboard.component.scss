@@ -1,0 +1,14 @@
+:host {
+  .legend {
+    small {
+      font-size: x-small;
+    }
+  }
+}
+
+.mat-mdc-icon-button[disabled] {
+  cursor: default;
+  pointer-events: none;
+  opacity: 1;
+  background: #CCC;
+}
